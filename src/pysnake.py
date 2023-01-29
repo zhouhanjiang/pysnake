@@ -8,6 +8,7 @@
 # 作者: Zhao Xin (赵鑫) <pythonchallenge@qq.com>
 # 时间: 2016.07.24
 # 更新: 2022.02.05 (by Frank_Star)
+import os
 
 from mygame import *
 
@@ -81,4 +82,5 @@ class PySnake(MyGame):
 
 
 if __name__ == '__main__':
+    os.chdir(os.path.dirname(os.path.dirname(__file__)))
     PySnake().run()
